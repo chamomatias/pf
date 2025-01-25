@@ -12,6 +12,11 @@ def inicio(request):
     return render(request, "app/inicio.html")
 
 
+def docentes(request):
+    return render(request, "app/docentes.html")
+
+def alumnos(request):
+    return render(request, "app/alumnos.html")
 
 class CursosListView(ListView):
     model = Cursos

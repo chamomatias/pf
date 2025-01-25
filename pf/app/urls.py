@@ -19,6 +19,11 @@ from app import views
 
 urlpatterns = [
     path('inicio', views.inicio, name="Inicio"),
+    path('docentes', views.docentes, name="Docentes"),
+    path('alumnos', views.alumnos, name="Alumnos"),
+    
+    
+    
     path('cursos-list', views.CursosListView.as_view(), name='cursos-list'),
     path('cursos-create', views.CursosCreateView.as_view(), name='cursos-create'),
         
